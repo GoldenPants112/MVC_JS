@@ -1,6 +1,6 @@
-import { Notifier } from "../pattern/notifier";
+import { Notifier } from "../pattern/notifier.js";
 
-class Controller extends Notifier{
+export class Controller extends Notifier{
     #counter;
     constructor(){
         super();
