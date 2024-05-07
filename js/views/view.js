@@ -6,7 +6,9 @@ export class View extends Observer{
     #controller
     
     constructor(_controller){
+        super();
         _controller= new Controller;
+        
         this.#controller= _controller;
         const increment = document.querySelector("button#btn-increment");
         increment.addEventListener("click",()=>{this.#controller.incrementCounter();});

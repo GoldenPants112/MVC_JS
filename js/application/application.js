@@ -14,5 +14,7 @@ function controllerView(){
 }
 
 window.addEventListener("load",display());
+window.addEventListener("load",controllerView());
+
 
 //this is a comemnt

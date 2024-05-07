@@ -4,14 +4,15 @@ export class Notifier{
     #observers
 
     constructor(){
-        this.#observers = new Observer;
         this.#observers=[];
     }
     addObserver(_observer){
     this.#observers.push(_observer);
     }
     notify(){
-        this.#observers.notify();
+        for(let observer in this.#observers){
+            this.#observers.notify();
+        }
     }
 
 
