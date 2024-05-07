@@ -6,3 +6,4 @@ function display(){
     console.log(counter1.number);
 }
 window.addEventListener("load",display());
+//this is a comemnt
